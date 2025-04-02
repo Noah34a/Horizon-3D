@@ -48,8 +48,6 @@ Et accède à `http://localhost:3000` (ou autre port indiqué)
 ├── index.html              # Page d'accueil principale
 ├── merci.html              # Page de confirmation après formulaire
 ├── pack.html               # Exemple de page fiche produit
-├── /assets                 # Images (packs, logos...)
-└── README.md               # Ce fichier
 ```
 
 ## 📬 Configuration des formulaires
@@ -62,4 +60,4 @@ Les formulaires utilisent [FormSubmit](https://formsubmit.co) :
 Projet libre pour usage éducatif ou personnel.
 
 ---
-Créé avec passion par [TonNom] 💙
+Créé avec passion par Lemoing Noah 💙
