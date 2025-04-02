@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizon 3D - Accueil</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black text-white font-sans">
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 bg-black bg-opacity-80 backdrop-blur z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Horizon 3D</h1>
+      <ul class="flex space-x-6 text-sm font-medium">
+        <li><a href="#" class="hover:text-blue-400 transition">Accueil</a></li>
+        <li><a href="#packs" class="hover:text-blue-400 transition">Packs</a></li>
+        <li><a href="#concours" class="hover:text-blue-400 transition">Concours</a></li>
+        <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center py-32 px-4">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4 mt-12">Horizon 3D</h1>
+    <p class="text-xl md:text-2xl text-gray-300">Explorez. Téléchargez. Créez.</p>
+    <p class="mt-4 text-gray-400 max-w-xl mx-auto">Des packs d'assets 3D immersifs pour les créateurs de jeux vidéo + des concours pour booster votre créativité.</p>
+  </header>
+
+  <!-- Packs Section -->
+  <section id="packs" class="py-16 px-6">
+    <h2 class="text-3xl font-semibold mb-8 text-center">Nos Packs 3D</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <a href="pack.html" class="block bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+        <img src="/assets/environnement.jpg" alt="Pack Environnement" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Pack Environnement Sci-Fi</h3>
+          <p class="text-gray-400 text-sm mt-2">Créez des mondes futuristes avec ce pack complet de décors.</p>
+        </div>
+      </a>
+      <a href="pack.html" class="block bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+        <img src="/assets/personnages.jpg" alt="Pack Personnages" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Pack Personnages Stylisés</h3>
+          <p class="text-gray-400 text-sm mt-2">Ajoutez des héros et ennemis à vos jeux indépendants.</p>
+        </div>
+      </a>
+      <a href="pack.html" class="block bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition">
+        <img src="/assets/effects.jpg" alt="Pack FX" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Pack Effets Spéciaux</h3>
+          <p class="text-gray-400 text-sm mt-2">Explosions, particules et effets magiques inclus.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+
+<!-- Concours Section -->
+<section id="concours" class="py-20 px-6 bg-gray-900">
+    <h2 class="text-3xl font-semibold text-center mb-6">Concours en cours</h2>
+    <div class="max-w-3xl mx-auto bg-gray-800 p-8 rounded-2xl shadow-xl">
+      <h3 class="text-2xl font-bold text-center mb-4">Créez un mini-jeu et gagnez un pack 3D Premium !</h3>
+      <p class="text-gray-400 text-center mb-8">Soumettez votre participation avant le <strong>30 avril 2025</strong>.</p>
+      <form action="https://formsubmit.co/pelluchonandy@mail.com" method="POST" class="space-y-6">
+        <input type="hidden" name="_next" value="https://ton-site.com/merci.html">
+        <input type="hidden" name="_captcha" value="false">
+        <div>
+          <label for="participant-name" class="block text-sm font-medium text-gray-300 mb-1">Nom complet</label>
+          <input type="text" id="participant-name" name="participant-name" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="participant-email" class="block text-sm font-medium text-gray-300 mb-1">Adresse email</label>
+          <input type="email" id="participant-email" name="participant-email" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div>
+          <label for="game-link" class="block text-sm font-medium text-gray-300 mb-1">Lien vers votre mini-jeu (Itch.io, Drive, etc.)</label>
+          <input type="url" id="game-link" name="game-link" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition">Envoyer ma participation</button>
+        </div>
+      </form>
+  
+    </div>
+  </section>
+  
+  
+
+<!-- Formulaire de contact -->
+<section id="contact" class="py-20 px-6 bg-gray-800">
+    <h2 class="text-3xl font-semibold text-center mb-8">Contactez-nous</h2>
+    <form action="https://formsubmit.co/pelluchonandy@mail.com" method="POST" class="max-w-2xl mx-auto bg-gray-900 p-8 rounded-2xl shadow-lg space-y-6">
+      <input type="hidden" name="_next" value="https://ton-site.com/merci.html">
+      <input type="hidden" name="_captcha" value="false">
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-300 mb-1">Nom</label>
+        <input type="text" id="name" name="name" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-300 mb-1">Email</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-300 mb-1">Message</label>
+        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-semibold transition">Envoyer</button>
+      </div>
+    </form>
+  
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="py-10 text-center text-gray-500 text-sm">
+    &copy; 2025 Horizon 3D. Tous droits réservés.
+  </footer>
+</body>
+</html>
